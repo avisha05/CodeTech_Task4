@@ -1,0 +1,124 @@
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f7fc;
+  color: #333;
+}
+header {
+  background-color: #4a90e2;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+header nav {
+  margin-top: 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+h1,h2,h3,h4,h5{
+    margin-bottom: 2.4rem;
+}
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,0.5), #4a90e2), url('https://images.unsplash.com/photo-1581090700227-1e8e776b43a3');
+  background-size: cover;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero-content {
+  max-width: 600px;
+  margin: auto;
+}
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.features-grid {
+    margin-bottom: 2rem;
+    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.feature {
+  background: rgb(172, 226, 244);
+  padding: 3rem;
+  border-radius: 10px 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.testimonials .testimonial-card {
+    display:inline-flex;
+  background: rgb(172, 226, 244);
+  margin: 10px auto;
+  padding:3rem;
+  border-radius: 25px;
+  max-width: 600px;
+  border-left: 10px solid #4a90e2;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+.course-card {
+    display: flex;
+    flex-direction: column;
+  background: rgb(142, 169, 207);
+  padding: 20px;
+  border-radius: 30px 10px;
+  border-left: 6px solid #4a90e2;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.course-card:hover {
+  transform: scale(1.02);
+}
+.hero-des{
+    margin-bottom: 2rem;
+}
+.btn {
+  background: #75c9e5;
+  color: white;
+  
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.video-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .features-grid, .course-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
